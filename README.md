@@ -3,7 +3,11 @@
 A DNA polymer simulator paired with two independent knot classifiers — one
 classical (Alexander polynomial), one topological (persistent homology) — used together to
 study how confinement affects knotting. 
-![Confinement study result](docs/images/confinement_full_comparison.png)
+
+<p align="center">
+ <img src="docs/images/knot_types.png" alt="Knot types" width="45%">
+ <img src="docs/images/confinement_full_comparison.png" alt="Confinement study result" width="45%">
+</p>
 
 A first-pass analysis using only a topological classifier suggested a
 confinement-induced knotting transition. Cross-validating against a
