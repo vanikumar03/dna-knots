@@ -5,8 +5,8 @@ classical (Alexander polynomial), one topological (persistent homology) — used
 study how confinement affects knotting. 
 
 <p align="center">
- <img src="docs/images/knot_types.png" alt="Knot types" width="45%">
- <img src="docs/images/confinement_full_comparison.png" alt="Confinement study result" width="45%">
+ <img src="docs/images/knot_types.png" alt="Knot types" height="300">
+ <img src="docs/images/confinement_full_comparison.png" alt="Confinement study result" height="300">
 </p>
 
 A first-pass analysis using only a topological classifier suggested a
