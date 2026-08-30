@@ -1,0 +1,17 @@
+# Core
+numpy
+scipy
+matplotlib
+
+# Classical knot classification (Alexander polynomial)
+sympy
+
+# TDA knot classification
+gudhi
+
+# ML knot-type classifier (notebook 6)
+scikit-learn
+
+# Notebooks
+jupyter
+nbformat

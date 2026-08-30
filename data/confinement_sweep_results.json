@@ -1,0 +1,21 @@
+{
+  "description": "Raw results from the confinement sweep in 05_confinement_study.ipynb. N=50 beads, 50000 Langevin dynamics steps per run, 8 replicates per condition, confinement_strength=50.0. Classical classifier (Alexander polynomial, provably-correct KMT simplification) is the trustworthy ground truth; TDA classifier (distance-matrix persistent homology) is confounded by confinement-induced compression - see notebook 5 section D for the full investigation.",
+  "parameters": {
+    "N_beads": 50,
+    "n_steps": 50000,
+    "dt": 0.0001,
+    "n_replicates": 8,
+    "confinement_strength": 50.0,
+    "kappa": 1.0
+  },
+  "results": [
+    {"condition": "unconfined", "confinement_radius": null, "tda_knotted": 0, "classical_knotted": 0, "total": 8},
+    {"condition": "r=5.0", "confinement_radius": 5.0, "tda_knotted": 1, "classical_knotted": 0, "total": 8},
+    {"condition": "r=4.0", "confinement_radius": 4.0, "tda_knotted": 7, "classical_knotted": 0, "total": 8},
+    {"condition": "r=3.0", "confinement_radius": 3.0, "tda_knotted": 7, "classical_knotted": 0, "total": 8},
+    {"condition": "r=2.5", "confinement_radius": 2.5, "tda_knotted": 8, "classical_knotted": 0, "total": 8},
+    {"condition": "r=2.0", "confinement_radius": 2.0, "tda_knotted": 8, "classical_knotted": 0, "total": 8},
+    {"condition": "r=1.5", "confinement_radius": 1.5, "tda_knotted": 8, "classical_knotted": 0, "total": 8}
+  ],
+  "conclusion": "Within this simulation's accessible regime, genuine spontaneous knot formation essentially does not occur regardless of confinement strength, per the classical (trustworthy) classifier. The TDA classifier's apparent knotting transition (0/8 -> 8/8) is a confinement-compression artifact, root-caused in notebook 5: confined configurations robustly reduce to 4 vertices under KMT simplification (stable across 5 orders of magnitude of numerical tolerance), which is decisive proof of unknottedness since a 4-vertex polygon cannot represent any nontrivial knot."
+}
